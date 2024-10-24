@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		646C1E422CCA5B3E00CCE576 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 646C1E292CCA5B3300CCE576 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 646C1E302CCA5B3300CCE576;
+			remoteInfo = CielFlashCard;
+		};
+		646C1E4C2CCA5B3E00CCE576 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 646C1E292CCA5B3300CCE576 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 646C1E302CCA5B3300CCE576;
+			remoteInfo = CielFlashCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		646C1E312CCA5B3300CCE576 /* CielFlashCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CielFlashCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		646C1E412CCA5B3E00CCE576 /* CielFlashCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CielFlashCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		646C1E4B2CCA5B3E00CCE576 /* CielFlashCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CielFlashCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		646C1E332CCA5B3300CCE576 /* CielFlashCard */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CielFlashCard;
+			sourceTree = "<group>";
+		};
+		646C1E442CCA5B3E00CCE576 /* CielFlashCardTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CielFlashCardTests;
+			sourceTree = "<group>";
+		};
+		646C1E4E2CCA5B3E00CCE576 /* CielFlashCardUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CielFlashCardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		646C1E2E2CCA5B3300CCE576 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646C1E3E2CCA5B3E00CCE576 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646C1E482CCA5B3E00CCE576 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		646C1E282CCA5B3300CCE576 = {
+			isa = PBXGroup;
+			children = (
+				646C1E332CCA5B3300CCE576 /* CielFlashCard */,
+				646C1E442CCA5B3E00CCE576 /* CielFlashCardTests */,
+				646C1E4E2CCA5B3E00CCE576 /* CielFlashCardUITests */,
+				646C1E322CCA5B3300CCE576 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		646C1E322CCA5B3300CCE576 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				646C1E312CCA5B3300CCE576 /* CielFlashCard.app */,
+				646C1E412CCA5B3E00CCE576 /* CielFlashCardTests.xctest */,
+				646C1E4B2CCA5B3E00CCE576 /* CielFlashCardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		646C1E302CCA5B3300CCE576 /* CielFlashCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 646C1E552CCA5B3E00CCE576 /* Build configuration list for PBXNativeTarget "CielFlashCard" */;
+			buildPhases = (
+				646C1E2D2CCA5B3300CCE576 /* Sources */,
+				646C1E2E2CCA5B3300CCE576 /* Frameworks */,
+				646C1E2F2CCA5B3300CCE576 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				646C1E332CCA5B3300CCE576 /* CielFlashCard */,
+			);
+			name = CielFlashCard;
+			packageProductDependencies = (
+			);
+			productName = CielFlashCard;
+			productReference = 646C1E312CCA5B3300CCE576 /* CielFlashCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		646C1E402CCA5B3E00CCE576 /* CielFlashCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 646C1E582CCA5B3E00CCE576 /* Build configuration list for PBXNativeTarget "CielFlashCardTests" */;
+			buildPhases = (
+				646C1E3D2CCA5B3E00CCE576 /* Sources */,
+				646C1E3E2CCA5B3E00CCE576 /* Frameworks */,
+				646C1E3F2CCA5B3E00CCE576 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				646C1E432CCA5B3E00CCE576 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				646C1E442CCA5B3E00CCE576 /* CielFlashCardTests */,
+			);
+			name = CielFlashCardTests;
+			packageProductDependencies = (
+			);
+			productName = CielFlashCardTests;
+			productReference = 646C1E412CCA5B3E00CCE576 /* CielFlashCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		646C1E4A2CCA5B3E00CCE576 /* CielFlashCardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 646C1E5B2CCA5B3E00CCE576 /* Build configuration list for PBXNativeTarget "CielFlashCardUITests" */;
+			buildPhases = (
+				646C1E472CCA5B3E00CCE576 /* Sources */,
+				646C1E482CCA5B3E00CCE576 /* Frameworks */,
+				646C1E492CCA5B3E00CCE576 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				646C1E4D2CCA5B3E00CCE576 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				646C1E4E2CCA5B3E00CCE576 /* CielFlashCardUITests */,
+			);
+			name = CielFlashCardUITests;
+			packageProductDependencies = (
+			);
+			productName = CielFlashCardUITests;
+			productReference = 646C1E4B2CCA5B3E00CCE576 /* CielFlashCardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		646C1E292CCA5B3300CCE576 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					646C1E302CCA5B3300CCE576 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					646C1E402CCA5B3E00CCE576 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 646C1E302CCA5B3300CCE576;
+					};
+					646C1E4A2CCA5B3E00CCE576 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 646C1E302CCA5B3300CCE576;
+					};
+				};
+			};
+			buildConfigurationList = 646C1E2C2CCA5B3300CCE576 /* Build configuration list for PBXProject "CielFlashCard" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 646C1E282CCA5B3300CCE576;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 646C1E322CCA5B3300CCE576 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				646C1E302CCA5B3300CCE576 /* CielFlashCard */,
+				646C1E402CCA5B3E00CCE576 /* CielFlashCardTests */,
+				646C1E4A2CCA5B3E00CCE576 /* CielFlashCardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		646C1E2F2CCA5B3300CCE576 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646C1E3F2CCA5B3E00CCE576 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646C1E492CCA5B3E00CCE576 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		646C1E2D2CCA5B3300CCE576 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646C1E3D2CCA5B3E00CCE576 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646C1E472CCA5B3E00CCE576 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		646C1E432CCA5B3E00CCE576 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 646C1E302CCA5B3300CCE576 /* CielFlashCard */;
+			targetProxy = 646C1E422CCA5B3E00CCE576 /* PBXContainerItemProxy */;
+		};
+		646C1E4D2CCA5B3E00CCE576 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 646C1E302CCA5B3300CCE576 /* CielFlashCard */;
+			targetProxy = 646C1E4C2CCA5B3E00CCE576 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		646C1E532CCA5B3E00CCE576 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		646C1E542CCA5B3E00CCE576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		646C1E562CCA5B3E00CCE576 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CielFlashCard/Preview Content\"";
+				DEVELOPMENT_TEAM = RDF8D7NQ78;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CaldarianX.CielFlashCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		646C1E572CCA5B3E00CCE576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CielFlashCard/Preview Content\"";
+				DEVELOPMENT_TEAM = RDF8D7NQ78;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CaldarianX.CielFlashCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		646C1E592CCA5B3E00CCE576 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RDF8D7NQ78;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CaldarianX.CielFlashCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CielFlashCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CielFlashCard";
+			};
+			name = Debug;
+		};
+		646C1E5A2CCA5B3E00CCE576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RDF8D7NQ78;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CaldarianX.CielFlashCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CielFlashCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CielFlashCard";
+			};
+			name = Release;
+		};
+		646C1E5C2CCA5B3E00CCE576 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RDF8D7NQ78;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CaldarianX.CielFlashCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CielFlashCard;
+			};
+			name = Debug;
+		};
+		646C1E5D2CCA5B3E00CCE576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RDF8D7NQ78;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CaldarianX.CielFlashCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CielFlashCard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		646C1E2C2CCA5B3300CCE576 /* Build configuration list for PBXProject "CielFlashCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				646C1E532CCA5B3E00CCE576 /* Debug */,
+				646C1E542CCA5B3E00CCE576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		646C1E552CCA5B3E00CCE576 /* Build configuration list for PBXNativeTarget "CielFlashCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				646C1E562CCA5B3E00CCE576 /* Debug */,
+				646C1E572CCA5B3E00CCE576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		646C1E582CCA5B3E00CCE576 /* Build configuration list for PBXNativeTarget "CielFlashCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				646C1E592CCA5B3E00CCE576 /* Debug */,
+				646C1E5A2CCA5B3E00CCE576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		646C1E5B2CCA5B3E00CCE576 /* Build configuration list for PBXNativeTarget "CielFlashCardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				646C1E5C2CCA5B3E00CCE576 /* Debug */,
+				646C1E5D2CCA5B3E00CCE576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 646C1E292CCA5B3300CCE576 /* Project object */;
+}
