@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct CielFlashCardApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .modelContainer(for: Deck.self)
         }
     }
 }
