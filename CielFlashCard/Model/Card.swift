@@ -77,7 +77,7 @@ class Card: Identifiable {
         let speechSynthesizer = AVSpeechSynthesizer()
         let speechUtterance = AVSpeechUtterance(string: question)
         speechUtterance.rate = 0.45
-        speechUtterance.voice = AVSpeechSynthesisVoice(language: "zh-CN")
+        speechUtterance.voice = AVSpeechSynthesisVoice(language: "zh-CN")//chinese Code Language
         speechSynthesizer.speak(speechUtterance)
     }
 }

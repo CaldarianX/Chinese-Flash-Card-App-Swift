@@ -6,7 +6,7 @@ enum Mode {
     case MultipleChoice
 }
 struct DeckView: View {
-    var deck: Deck  // Deck passed from ContentView
+    var deck: Deck
     @State private var newQuestion: String = ""
     @State private var newAnswer: String = ""
     @State private var Ondelete: Bool = false
@@ -33,7 +33,7 @@ struct DeckView: View {
                     
                     Button(action: {
                         withAnimation{
-                            Ondelete.toggle()  // Toggle the state
+                            Ondelete.toggle()
                         }
                     }) {
                         HStack {
@@ -49,7 +49,7 @@ struct DeckView: View {
                     }
                     Button(action: {
                         withAnimation{
-                            AddInBulk.toggle() // Toggle the state
+                            AddInBulk.toggle()
                         }
                     }) {
                         HStack {
@@ -104,7 +104,7 @@ struct DeckView: View {
                         .cornerRadius(10)
                         .overlay(
                             RoundedRectangle(cornerRadius: 10)
-                                .stroke(SelectedMode == .FlashCard ? Color.red : Color.gray, lineWidth: 4) // Change border color
+                                .stroke(SelectedMode == .FlashCard ? Color.red : Color.gray, lineWidth: 4)
                         )
                         .bold()
 
@@ -117,7 +117,7 @@ struct DeckView: View {
                         .cornerRadius(10)
                         .overlay(
                             RoundedRectangle(cornerRadius: 10)
-                                .stroke(SelectedMode == .MultipleChoice ? Color.green : Color.gray, lineWidth: 4) // Change border color
+                                .stroke(SelectedMode == .MultipleChoice ? Color.green : Color.gray, lineWidth: 4)
                         )
                         .bold()
                     }
@@ -137,7 +137,6 @@ struct DeckView: View {
                             Text("All").tag(deck.cards.count)
                         }
                         .foregroundColor(.white)
-//                        .frame(width: 300, height: 40)   // Control the picker size
                         .background(Color.white)
                         .cornerRadius(8)                 // Rounded corners
                         .shadow(radius: 4)
@@ -163,9 +162,9 @@ struct DeckView: View {
                         }
                         .pickerStyle(.segmented)
                         .foregroundColor(.white)
-                        .frame(width: 300, height: 40)   // Control the picker size
+                        .frame(width: 300, height: 40)
                         .background(Color.white)
-                        .cornerRadius(8)                 // Rounded corners
+                        .cornerRadius(8)
                         .shadow(radius: 4)
                         .padding(.bottom,30)                       // Padding around the picker
                         
@@ -197,8 +196,8 @@ struct DeckView: View {
     
     func addCard() {
         let newCard = Card(question: newQuestion, answer: newAnswer)
-        deck.cards.append(newCard)  // Add new card to deck
-        newQuestion = ""  // Reset input fields
+        deck.cards.append(newCard)
+        newQuestion = ""
         newAnswer = ""
     }
     func addCardInBulk() {

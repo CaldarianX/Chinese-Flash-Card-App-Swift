@@ -8,10 +8,9 @@ struct FlashCardView: View {
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ZStack {
-            Color.darkBlue
+            Color.black
                 .ignoresSafeArea()
             VStack {
-                // Display the current question number
                 HStack {
                     Spacer()
                     Text("\(currentQuestion + 1)/\(deck.cards.count)")
@@ -20,57 +19,53 @@ struct FlashCardView: View {
                         .padding(.vertical, 10)
                     Spacer()
                 }
-                .background(Color.gray.opacity(0.8))
+                .background(Color.darkBlack2.opacity(0.8))
                 .cornerRadius(10)
                 .padding(.top, 20)
                 
                 Spacer()
                 
-                // Main card view with question and answer
                 Button(action:
                     deck.cards[currentQuestion].SpeakQuestion
-//                    print("Speaking")
                 ){
                     Image(systemName: "speaker.wave.2.circle.fill")
                         .resizable()
                         .scaledToFit()
                         .foregroundColor(.white)
                         .frame(width: 50, height: 50)
-                        .padding(8)
-//                        .background(Color.blue)    // Optional: add background color
-                        .clipShape(Circle())
+                        .padding(8)                     .clipShape(Circle())
                 }
                 VStack {
                     Text(deck.cards[currentQuestion].question)
                         .font(.system(size: 35, weight: .bold, design: .default))
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)//bg for question
                         .padding(.bottom, 10)
                         .bold()
                     Text(deck.cards[currentQuestion].piyin)
                         .font(.system(size: 25, weight: .bold, design: .default))
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)//bg for the piyin
                         .padding(.bottom, 10)
                         .bold()
                     if showAnswer {
                         Text(deck.cards[currentQuestion].answer)
                             .font(.title)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                     }
                 }
-                .padding()  // Adds padding inside the card
-                .frame(width: 350, height: 500)  // Adjusted height for better layout
-                .background(Color.blue)  // Background color for the card
+                .padding()
+                .frame(width: 350, height: 500)
+                .background(Color.grayCard)//bg for card
                 .cornerRadius(20)
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
-                        .stroke(borderColor(), lineWidth: 4)  // Border with dynamic color
+                        .stroke(borderColor(), lineWidth: 10)
                 )
-                .rotationEffect(.degrees(Double(dragOffset.width / 20)))  // Adds rotation effect
+                .rotationEffect(.degrees(Double(dragOffset.width / 20)))
                 .offset(x: dragOffset.width)
                 .gesture(
                     TapGesture()
                         .onEnded {
-                            // Toggle answer visibility
+                            
                             withAnimation {
                                 showAnswer.toggle()
                             }
@@ -79,24 +74,21 @@ struct FlashCardView: View {
                 .gesture(
                     DragGesture()
                         .onChanged { gesture in
-                            // Update drag offset based on gesture
                             dragOffset = gesture.translation
                         }
                         .onEnded { gesture in
-                            // Swipe left for next, swipe right for previous
                             if dragOffset.width < -100 {
                                 withAnimation {
                                     deck.cards[currentQuestion].minusPoint(int: 20)
                                     nextCard()
                                 }
                             } else if dragOffset.width > 100 {
-                                // Swipe right (Previous card)
                                 withAnimation {
                                     deck.cards[currentQuestion].addPoint(int: 10)
                                     nextCard()
                                 }
                             }
-                            dragOffset = .zero  // Reset drag offset
+                            dragOffset = .zero
                         }
                 )
                 
@@ -111,18 +103,17 @@ struct FlashCardView: View {
             currentQuestion += 1
             showAnswer = false
         } else {
-            // If out of questions, dismiss the view
             presentationMode.wrappedValue.dismiss()
         }
     }
-    // Determines border color based on drag direction
+//    left red right green
     private func borderColor() -> Color {
         if dragOffset.width < -50 {
-            return Color.red.opacity(Double(min(-dragOffset.width / 100, 1.0)))  // Fade red on left swipe
+            return Color.red.opacity(Double(min(-dragOffset.width / 100, 1.0)))
         } else if dragOffset.width > 50 {
-            return Color.green.opacity(Double(min(dragOffset.width / 100, 1.0)))  // Fade green on right swipe
+            return Color.green.opacity(Double(min(dragOffset.width / 100, 1.0)))
         } else {
-            return Color.white
+            return Color.darkBlack2
         }
     }
 }
