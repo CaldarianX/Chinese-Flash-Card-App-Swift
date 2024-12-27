@@ -6,6 +6,7 @@ struct ContentView: View {
     @Query var decks : [Deck]
     @State var IsRemove  : Bool = false
     @State var newDeskName  : String = ""
+    @State private var selectedDeck: Deck?
     var body: some View {
         NavigationStack{
             HStack{
@@ -36,7 +37,13 @@ struct ContentView: View {
             ScrollView{
                 ForEach(decks){deck in
                     HStack{
-                        NavigationLink(destination: DeckView(deck: deck)) {
+                        NavigationLink(
+                            destination: DeckCard(deck: Binding(
+                                get: { selectedDeck ?? deck },
+                                set: { newdeck in selectedDeck = Deck(name: "Error")}
+                            ))
+                            .navigationBarBackButtonHidden(true)
+                        ) {
                             DeckUI(deck: deck)
                                 .navigationBarTitle("")
                                 .navigationBarHidden(true)
@@ -52,6 +59,10 @@ struct ContentView: View {
                             }
                             .buttonStyle(BorderlessButtonStyle())
                         }
+                    }
+                    
+                    .onTapGesture {
+                        selectedDeck = deck // Set the selected deck when tapped
                     }
                 }
             }
@@ -85,7 +96,6 @@ struct NewDeckInfo : View{
                 Text("Deck")
             }
             Section {
-                Text("Pick a Color")
                 HStack {
                     ForEach(colorOptions, id: \.self) { color in
                         Circle()
@@ -103,6 +113,8 @@ struct NewDeckInfo : View{
                     }
                 }
                 .padding(.vertical)
+            } header:{
+                Text("Pick a Color")
             }
         }
         .navigationTitle(Text("New Deck"))

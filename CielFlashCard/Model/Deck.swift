@@ -49,6 +49,9 @@ final class Deck : Identifiable {
     func reviewNumber() -> String {
         return String(totalPlay)
     }
+    func isempty() -> Bool {
+        return cards.isEmpty
+    }
     func getColor() -> Color {
         switch color_deck {
             case "Black":
