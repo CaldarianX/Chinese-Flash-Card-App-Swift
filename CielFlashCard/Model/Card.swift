@@ -15,6 +15,13 @@ class Card: Identifiable {
     var piyin : String
     var answer: String
     var point : Int = 0
+    init(_ question: String, _ answer: String) {
+        self.question = question
+        self.answer = answer
+        self.point = 0
+        self.piyin = ""
+        self.piyin = chineseToPinyinWithTones(question) ?? ""
+    }
     init(question: String, answer: String) {
         self.question = question
         self.answer = answer

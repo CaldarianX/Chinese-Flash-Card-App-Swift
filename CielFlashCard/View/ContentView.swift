@@ -7,6 +7,7 @@ struct ContentView: View {
     @State var IsRemove  : Bool = false
     @State var newDeskName  : String = ""
     @State private var selectedDeck: Deck?
+    @State private var showSheet = false
     var body: some View {
         NavigationStack{
             HStack{
@@ -14,16 +15,21 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .bold()
                 Spacer()
-                NavigationStack {
-                    NavigationLink(destination: NewDeckInfo(onSave: { name, description, color in
-                        addNewDeck(name: name, description: description, color: color)
-                    })) {
-                        Image(systemName: "plus")
-                            .font(.title)
-                            .foregroundColor(.blue)
-                    }
+                Button(action: {
+                    showSheet = true
+                }) {
+                    Image(systemName: "plus")
+                        .font(.title)
+                        .foregroundColor(.blue)
                 }
-                .frame(width: 20,height: 20)
+                .sheet(isPresented: $showSheet) {
+                    NewDeckInfo(onSave: { name, description, color in
+                        addNewDeck(name: name, description: description, color: color)
+                        showSheet = false
+                    })
+                    .presentationDetents([.large])
+                    .presentationDragIndicator(.visible)
+                }
                 Image(systemName: "minus")
                     .font(.title)
                     .foregroundColor(.blue)
@@ -72,6 +78,9 @@ struct ContentView: View {
 
     }
     func addNewDeck(name: String, description: String, color: Color) {
+        if(name.isEmpty){
+            return
+        }
         let newDeck = Deck(name: name, des: description,color:color)
         withAnimation {
             modelContext.insert(newDeck)
