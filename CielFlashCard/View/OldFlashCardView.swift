@@ -63,6 +63,8 @@ struct FlashCardView: View {
                 .rotationEffect(.degrees(Double(dragOffset.width / 20)))
                 .offset(x: dragOffset.width)
                 .gesture(
+                    
+                    
                     TapGesture()
                         .onEnded {
                             

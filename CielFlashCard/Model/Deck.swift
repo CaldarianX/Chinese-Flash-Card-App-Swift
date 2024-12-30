@@ -37,7 +37,7 @@ final class Deck : Identifiable {
     }
     init (name: String,cards:[Card]) {
         self.name = name
-        self.cards = []
+        self.cards = cards
         self.totalPlay = 0
     }
     func addCard(_ card: Card) {

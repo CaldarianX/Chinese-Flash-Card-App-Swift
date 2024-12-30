@@ -47,11 +47,9 @@ struct DeckCard: View {
                     }
                     
                 }
+                
                 ToolbarItem(placement:.topBarTrailing){
-                    Button{
-                        print("Play")
-                        
-                    }label: {
+                    NavigationLink(destination: PlayFlashCard(deck: $deck)) {
                         Image(systemName: "play.fill")
                     }
                 }
