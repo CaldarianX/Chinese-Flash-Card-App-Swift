@@ -38,6 +38,9 @@ struct PlayFlashCard: View {
             else{
                 Text(deck.cards[currentIndex].question)
                     .font(.title)
+                Text(deck.cards[currentIndex].piyin)
+                    .font(.title)
+                    .foregroundStyle(.gray)
             }
         }
         .frame(width: 320, height: 500)
@@ -75,6 +78,7 @@ struct PlayFlashCard: View {
         else{
             deck.cards[currentIndex].point -= 15
         }
+        deck.totalPlay += 1
         showingAnswer = false
         if currentIndex < deck.cards.count - 1 {
             currentIndex += 1

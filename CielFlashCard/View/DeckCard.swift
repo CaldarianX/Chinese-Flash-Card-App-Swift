@@ -68,8 +68,8 @@ struct DeckCard: View {
             deck.cards.remove(at: index)
         }
     }
-    func addCard(question:String,answer:String){
-        let NewCard = Card(question,answer)
+    func addCard(question:String,answer:String,piyin:String){
+        let NewCard = Card(question: question,answer: answer,piyin: piyin)
         deck.addCard(NewCard)
     }
     func addCardInBulk(InbulkString:String,separator:String){
@@ -77,11 +77,12 @@ struct DeckCard: View {
         let lines = InbulkString.split(separator: "\n")
 //        InBulkArray.forEach{InBulkString in
         for (index, line) in lines.enumerated(){
-            let words = line.split(separator: separator,maxSplits:1)
-            if(words.count == 2){
+            let words = line.split(separator: separator)
+            if(words.count == 3){
                 let Question = String(words[0])
-                let Answer = String(words[1])
-                addCard(question: Question, answer: Answer)
+                let Piyin = String(words[1])
+                let Answer = String(words[2])
+                addCard(question: Question, answer: Answer,piyin:Piyin)
             }
             else {
                 // Trigger the alert for a line with incorrect format
@@ -96,10 +97,11 @@ struct AddNewCard : View {
     @State private var AddInBulk = false
     @State private var Question:String = ""
     @State private var Answer:String = ""
+    @State private var Piyin :String = ""
     @State private var InBulkString:String = ""
     @State private var Separator:String = ""
     @Binding var isPresented:Bool
-    var addCard : (String,String)->Void
+    var addCard : (String,String,String)->Void
     var addCardInBulk : (String,String)->Void
     
     var body: some View {
@@ -115,6 +117,7 @@ struct AddNewCard : View {
             if !AddInBulk{
                 Section{
                     TextField("Question",text:$Question)
+                    TextField("Piyin",text:$Piyin)
                     TextField("Answer",text:$Answer)
                 } header: {
                     Text("Card")
@@ -147,7 +150,7 @@ struct AddNewCard : View {
             }
             else{
                 if !Question.isEmpty && !Answer.isEmpty{
-                    addCard(Question,Answer)
+                    addCard(Question,Piyin,Answer)
                 }
             }
             isPresented = false

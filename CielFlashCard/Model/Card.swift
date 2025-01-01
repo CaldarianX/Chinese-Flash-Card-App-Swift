@@ -29,6 +29,12 @@ class Card: Identifiable {
         self.piyin = ""
         self.piyin = chineseToPinyinWithTones(question) ?? ""
     }
+    init(question : String,answer:String,piyin:String){
+        self.question = question
+        self.answer = answer
+        self.piyin = piyin
+        self.point = 0
+    }
     func minusPoint(int x : Int){
         point -= x
         if(point < 0){
